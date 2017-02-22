@@ -1,0 +1,14 @@
+package Interact;
+
+message SendTable {
+	required string uin = 1;
+	required string table_name = 2;
+	optional string table_md5 = 3;
+	
+	enum Type {
+		A = 0;
+		B = 1;
+	}
+
+	optional byte table_data = 4;
+}
